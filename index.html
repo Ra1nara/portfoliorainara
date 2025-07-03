@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+<header>
+  <img src="./assets/logo.png" alt="" id="logo">
+
+  <nav>
+      
+    <ul>
+      <li><a href="#sobreText">Sobre</a></li>
+      <li>Projetos</li>
+      <li>Contatos</li>
+
+    </ul>
+  </nav>
+</header>
+<div id="particles-js"></div>
+<main>
+  <section id="home" class="container">
+    
+    <div id="content">
+      <p>Olá <span>&#x1F44B;</span></p>
+      <h1>Meu nome é Rainara</h1>
+      <p>Desenvolvedora front-end freelancer</p>
+      <div class="icones">
+        <a href="www.linkedin.com/in/ra1nara" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="https://github.com/Ra1nara" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://www.instagram.com/rainaradev?igsh=YmRsYXpldWxjM252&utm_source=qr" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="container">
+    <div id="slogan">
+      <h6>Tranformando negócios em experiências digitais.</h6>
+    </div>
+
+    <div id="sobreText">
+      <h3>Conheça mais sobre mim...</h3>
+      <p>Sou estudante de Desenvolvimento Web com mais de 2 anos de experiência prática. Como profissional autodidata, estou em
+      constante busca por aprimoramento, aprendendo continuamente novas tecnologias.
+      <br><br> Tenho experiência em projetos utilizando
+      HTML, CSS e JavaScript, com foco em oferecer experiências completas ao usuário — desenvolvendo interfaces atrativas,
+      intuitivas e responsivas para os mais diversos dispositivos.
+      </p>
+    </div>
+    
+    
+  </section>
+  
+  
+  
+  
+</main>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 80,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#ffffff"
+      },
+      "shape": {
+        "type": "star"
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false
+      },
+      "size": {
+        "value": 3,
+        "random": true
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 4
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+
+</body>
+</html>

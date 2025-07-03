@@ -1,0 +1,175 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+p, a, li{
+  font-family: 'open sans', sans-serif;
+  font-weight: 500;
+}
+
+.container{
+  padding: 2em;
+
+}
+
+header{
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.5em;
+}
+#logo{
+  max-width: 100%;
+  max-height: 2em;
+  margin-left: 2em;
+}
+header ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  font-size: 0.9em;
+  gap: 1em;
+  margin-right: 2em;
+}
+header ul a{
+  text-decoration: none;
+  color: #c0c0c0;
+}
+
+header ul a:hover{
+  color: #ffffff;
+}
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: #000;
+}
+
+#home{
+  position: relative;
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+
+#content{
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #ffffff;
+  gap: 0.7em;
+  
+  
+}
+#home span{
+  display: inline-block;
+  transform-origin: bottom center;
+  animation: acenar 1s linear infinite;
+}
+
+.icones a {
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #ffffff;
+  
+}
+
+.icones a ion-icon{
+  transition: transform 0.3s ease, color 0.3s ease;
+
+}
+
+.icones a:hover ion-icon{
+  color: #c0c0c0;
+  transform: scale(1.2);
+  
+
+}
+
+#slogan{
+  text-align: center;
+}
+
+#sobre{
+  justify-content: center;
+  justify-items: center;
+}
+
+#sobreText{
+  margin-top: 4em; 
+  border: solid 1px;
+  border-radius: 1em;
+  max-width: 80%;
+  padding: 1em;
+  background-color: #1c1c1c;
+  text-align: start;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+#sobreText p {
+  margin-top: 1em;
+}
+#sobreText:hover{
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+@keyframes acenar {
+
+  0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      transform: rotate(15deg);
+    }
+  
+    50% {
+      transform: rotate(-10deg);
+    }
+  
+    75% {
+      transform: rotate(15deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  
