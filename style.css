@@ -246,36 +246,56 @@ transform: scale(1.05);     }
   border: solid 1px black;
   border-radius: 1em;
   background-color: #c0c0c0;
-
 }
 
 #baixarCV:hover {
   text-decoration: none;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .menu-btn {
     display: none;
   }
 
   .nav {
-    display: flex !important;
+    display: block;
     position: static;
-    flex-direction: row;
     background: transparent;
-    gap: 2rem;
+    box-shadow: none;
     padding: 0;
+    width: auto;
+    opacity: 1;
+    transform: none;
+    pointer-events: all;
   }
 
   .nav ul {
     display: flex;
+    flex-direction: row;
     gap: 2rem;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
   }
 
   .nav ul li {
     margin: 0;
+  }
+
+  .nav ul li a {
+    color: #c0c0c0;
+    font-size: 1rem;
+    text-transform: none;
+    text-decoration: none;
+  }
+
+  .nav ul li a:hover {
+    color: #ffffff;
+    transform: none;
   }
 }
 
