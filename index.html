@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>RainaraDev</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet"> 
@@ -37,7 +37,7 @@
       <p>Olá, visitante <span>&#x1F44B;</span></p>
       <h1>Meu nome é Rainara</h1>
       <p>Desenvolvedora front-end freelancer</p>
-      <div class="icones">
+      <div class="icones" class="container">
         <a href="www.linkedin.com/in/ra1nara" target="_blank">
           <ion-icon name="logo-linkedin"></ion-icon>
         </a>
@@ -68,6 +68,38 @@
       <button id="baixarCV">BAIXAR CV</button>
     </div>
     
+  </section>
+
+  <section id="projetos" class="container">
+    <h3>Meus Projetos</h3>
+    <div></div>
+    <div></div>
+    <div></div>
+  </section>
+
+
+  <section id="contatos" class="container">
+    <h3>Entre em contato</h3> 
+    <form action="contatoForm" class="container">
+    <div>
+    <label for="email" id="email">Email:</label> 
+    <input type="email" id="emailF" name="emailF" placeholder="Digite seu melhor email..." required>
+    </div>
+    <div>
+    <label for="nome" id="nome">Nome:</label> 
+    <input type="text" id="nomeF" name="nomeF" placeholder="Digite seu nome..." required>
+    </div>
+    <div>
+    <label for="whats" id="whats">WhatsApp:</label> 
+    <input type="tel" id="whatsF" name="whatsF" placeholder="11999999999" required>
+    </div>
+    <div>
+    <label for="mensagem" id="mensagem">Mensagem:</label> 
+    <input type="text" id="mensagemF" name="mensagemF" placeholder="Ola, gostaria de fazer um orçamento..." required>
+    </div>
+    <button type="submit" id="enviar">Enviar</button>
+    </form>
+    
     
   </section>
   
@@ -75,6 +107,11 @@
   
   
 </main>
+
+<footer>
+
+  
+</footer>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>

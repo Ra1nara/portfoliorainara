@@ -22,7 +22,6 @@ p, a, li{
 
 .container{
   padding: 2em;
-
 }
 
 header {
@@ -168,7 +167,6 @@ transform: scale(1.05);     }
   display: flex;
   align-items: center;
   justify-content: center;
-
   overflow: hidden;
 }
 
@@ -181,8 +179,6 @@ transform: scale(1.05);     }
   text-align: center;
   color: #ffffff;
   gap: 0.3em;
-  
-  
 }
 #home span{
   display: inline-block;
@@ -190,25 +186,25 @@ transform: scale(1.05);     }
   animation: acenar 1s linear infinite;
 }
 
+.icones{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 
 .icones a {
   font-size: 1.3em;
   text-decoration: none;
   color: #ffffff;
-  
-  
 }
 
 .icones a ion-icon{
   transition: transform 0.3s ease, color 0.3s ease;
-
 }
 
 .icones a:hover ion-icon{
   color: #c0c0c0;
   transform: scale(1.2);
-  
-
 }
 
 #slogan{
@@ -246,6 +242,7 @@ transform: scale(1.05);     }
   border: solid 1px black;
   border-radius: 1em;
   background-color: #c0c0c0;
+  color: #000;
 }
 
 #baixarCV:hover {
@@ -253,6 +250,79 @@ transform: scale(1.05);     }
   background-color: #ffffff;
   cursor: pointer;
 }
+
+
+#projetos {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#projetos div {
+  display: grid;
+  height: 300px;
+  border: solid 2px red;
+  max-width: 600px;
+  width: 100%; }
+
+
+  
+
+    #contatos {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      background: linear-gradient(180deg, #1c1c1c, #000);
+      max-width: 600px;
+      width: 90%;
+      padding: 1em;
+      text-align: start;
+      margin-inline: auto;
+      border-radius: 0.5emem; }
+
+  #contatos form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+  }
+  #contatos label{
+    display: block;
+    font-size: 1.2em;
+  }
+
+    #contatos input {
+      border: none;
+      border-radius: 0.5em;
+      padding: 0.8em;
+      font-size: 1em;
+      background-color: #333;
+      color: #fff;
+    width: 100%; }
+      
+
+    #enviar {
+      margin-top: 2em;
+      padding: 0.8em;
+      max-width: 150px;
+      background-color: #c0c0c0;
+      border: none;
+      border-radius: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+  
+    #enviar:hover {
+      background-color: #ffffff; }
+
+  footer{
+    height: 3.5em;
+    background: linear-gradient(180deg,
+      #1c1c1c,
+      #000);
+  }
 
 
 @media (min-width: 768px) {
@@ -299,13 +369,15 @@ transform: scale(1.05);     }
     transform: none;
   }
   
-#logo{
-  margin-left: 5em;
+  #logo{
+    margin-left: 5em;
+  }
+
+  #projetos div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-}
-
-
-
 
 @keyframes acenar {
 
