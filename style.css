@@ -270,6 +270,7 @@ transform: scale(1.05);     }
     opacity: 1;
     transform: none;
     pointer-events: all;
+    margin-right: 5em;
   }
 
   .nav ul {
@@ -297,7 +298,13 @@ transform: scale(1.05);     }
     color: #ffffff;
     transform: none;
   }
+  
+#logo{
+  margin-left: 5em;
 }
+}
+
+
 
 
 @keyframes acenar {
