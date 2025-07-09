@@ -22,7 +22,7 @@
   <nav class="nav" id="nav">
       
     <ul>
-      <li><a href="#sobreText">Sobre</a></li>
+      <li><a href="#sobre">Sobre</a></li>
       <li><a href="#projetos">Projetos</a></li>
       <li><a href="#contatos">Contatos</a></li>
 
@@ -72,22 +72,89 @@
 
   <section id="projetos" class="container">
     <h3>Meus Projetos</h3>
-    <div></div>
-    <div></div>
-    <div></div>
+  <div id="projetosBox">
+    <div class="box">
+    <div class="carrossel" >
+      <button class="prev">&#10094;</button>
+      <div class="carrosselContainer">
+      <img class="carrosselItem" src="./assets/preview-barbearia/Captura de Tela (27).png" alt="">
+      <img class="carrosselItem" src="./assets/preview-barbearia/Captura de Tela (28).png" alt="">
+      <img class="carrosselItem" src="./assets/preview-barbearia/Captura de Tela (29).png" alt="">
+      <img class="carrosselItem" src="./assets/preview-barbearia/Captura de Tela (30).png" alt="">
+      <img class="carrosselItem" src="./assets/preview-barbearia/Captura de Tela (31).png" alt="">
+      <img class="carrosselItem" src="./assets/preview-barbearia/Captura de Tela (32).png" alt="">
+      </div>
+      <button class="next">&#10095;</button>
+    </div>
+    <div class="info">
+      <h3>Landing Page Barbearia</h3>
+      <p>Landing page responsiva para barbearia, com design moderno e
+         navegação intuitiva. Ideal para atrair clientes locais. <br>
+        Destaques: Menu hamburger responsivo, uso de animações simples, layout mobile first.</p>
+    </div>
+    <div class="tech-badges">
+      <span><ion-icon name="logo-html5"></ion-icon> HTML5</span>
+      <span><ion-icon name="logo-css3"></ion-icon> CSS3</span>
+      <span><ion-icon name="logo-javascript"></ion-icon> JavaScript</span>
+      </div>
+  </div>
+  <div class="box">
+    <div class="carrossel">
+      <button class="prev">&#10094;</button>
+      <div class="carrosselContainer">
+        <img class="carrosselItem" src="./assets/preview-links/preview-dark.png" alt="">
+        <img class="carrosselItem" src="./assets/preview-links/preview-light.png" alt="">
+      </div>
+      <button class="next">&#10095;</button>
+    </div>
+    <div class="info">
+      <h3>Agrupador de Links</h3>
+      <p>Página web que reúne links importantes em um
+        único lugar, para facilitar acesso rápido e organizado. <br>
+        Destaques: Menu hamburger responsivo, uso de animações simples, layout mobile first.</p>
+    </div>
+    <div class="tech-badges">
+      <span><ion-icon name="logo-html5"></ion-icon> HTML5</span>
+      <span><ion-icon name="logo-css3"></ion-icon> CSS3</span>
+      <span><ion-icon name="logo-javascript"></ion-icon> JavaScript</span>
+      </div>
+  </div>
+    <div class="box">
+    <div class="carrossel">
+      <button class="prev">&#10094;</button>
+      <div class="carrosselContainer">
+        <img class="carrosselItem" src="./assets/preview-stranger-things/preview1.png" alt="">
+        <img class="carrosselItem" src="./assets/preview-stranger-things/preview2.png" alt="">
+      </div>
+      <button class="next">&#10095;</button>
+    </div>
+    
+    <div class="info">
+      <h3>Stranger Things Fan Page</h3>
+      <p>Página temática inspirada na série Stranger Things, com layout customizado e 
+        uso de fontes e cores característicos. <br>
+        Destaques: Uso de fontes personalizadas, layout responsivo, detalhes visuais que remetem à série.</p>
+    </div>
+    <div class="tech-badges">
+      <span><ion-icon name="logo-html5"></ion-icon> HTML5</span>
+      <span><ion-icon name="logo-css3"></ion-icon> CSS3</span>
+      </div>
+  </div>
+  </div>
   </section>
 
 
   <section id="contatos" class="container">
     <h3>Entre em contato</h3> 
     <form action="contatoForm" class="container">
-    <div>
-    <label for="email" id="email">Email:</label> 
-    <input type="email" id="emailF" name="emailF" placeholder="Digite seu melhor email..." required>
-    </div>
+    
     <div>
     <label for="nome" id="nome">Nome:</label> 
-    <input type="text" id="nomeF" name="nomeF" placeholder="Digite seu nome..." required>
+    <input type="text" id="nomeF" name="nomeF" placeholder="Digite seu nome" required>
+    </div>
+    <div>
+    <label for="email" id="email">Email:</label> 
+    <input type="email" id="emailF" name="emailF" placeholder="Digite seu melhor email" required>
     </div>
     <div>
     <label for="whats" id="whats">WhatsApp:</label> 
@@ -115,7 +182,7 @@
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 
 </body>
 </html>

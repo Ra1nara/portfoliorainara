@@ -46,6 +46,8 @@ particlesJS("particles-js", {
 });
   
 
+// Partículas já configuradas (mantive seu código, não mexi)
+
 const menuBtn = document.getElementById('menu-btn');
 const nav = document.getElementById('nav');
 
@@ -55,15 +57,51 @@ menuBtn.addEventListener('click', () => {
 });
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-  
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    });
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+
+// CARROSSEL - Suporta múltiplos carrosseis na página
+
+document.querySelectorAll('.carrossel').forEach(carrossel => {
+  const container = carrossel.querySelector('.carrosselContainer');
+  const items = carrossel.querySelectorAll('.carrosselItem');
+  const btnPrev = carrossel.querySelector('.prev');
+  const btnNext = carrossel.querySelector('.next');
+  const totalSlides = items.length;
+  let index = 0;
+
+  btnNext.addEventListener('click', () => {
+    index = (index + 1) % totalSlides;
+    container.style.transform = `translateX(-${index * 100}%)`;
+  });
+
+  btnPrev.addEventListener('click', () => {
+    index = (index - 1 + totalSlides) % totalSlides;
+    container.style.transform = `translateX(-${index * 100}%)`;
+  });
+});
+
+
+
+  const carrossel = document.querySelector('.carrosselContainer');
+  const totalSlides = document.querySelectorAll('.carrosselItem').length;
+  let index = 0;
+
+  document.querySelector('.next').addEventListener('click', () => {
+    index = (index + 1) % totalSlides;
+    carrossel.style.transform = `translateX(-${index * 100}%)`;
+  });
+
+  document.querySelector('.prev').addEventListener('click', () => {
+    index = (index - 1 + totalSlides) % totalSlides;
+    carrossel.style.transform = `translateX(-${index * 100}%)`;
   });
