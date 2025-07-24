@@ -70,7 +70,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // CARROSSEL - Suporta múltiplos carrosseis na página
-
 document.querySelectorAll('.carrossel').forEach(carrossel => {
   const container = carrossel.querySelector('.carrosselContainer');
   const items = carrossel.querySelectorAll('.carrosselItem');
@@ -92,16 +91,4 @@ document.querySelectorAll('.carrossel').forEach(carrossel => {
 
 
 
-  const carrossel = document.querySelector('.carrosselContainer');
-  const totalSlides = document.querySelectorAll('.carrosselItem').length;
-  let index = 0;
-
-  document.querySelector('.next').addEventListener('click', () => {
-    index = (index + 1) % totalSlides;
-    carrossel.style.transform = `translateX(-${index * 100}%)`;
-  });
-
-  document.querySelector('.prev').addEventListener('click', () => {
-    index = (index - 1 + totalSlides) % totalSlides;
-    carrossel.style.transform = `translateX(-${index * 100}%)`;
-  });
+  
