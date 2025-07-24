@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6{
   font-size: 2em;
 }
 
-p, a, li{
+p, a, li, button{
   font-size: 1.2em;
   font-weight: 500;
 }
@@ -32,6 +32,7 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  
 }
 #logo img{
   max-width: 100%;
@@ -59,9 +60,9 @@ header ul a:hover{
   position: relative;
   z-index: 1001;
   width: 30px;
-  height: 25px;
   cursor: pointer;
   margin-right: 2em;
+  
   
 }
 
@@ -71,6 +72,7 @@ header ul a:hover{
   width: 100%;
   position: relative;
   transition: 0.3s ease;
+  
 }
 
 .menu-btn__burger::before,
@@ -81,6 +83,7 @@ header ul a:hover{
   height: 3px;
   background: white;
   transition: 0.3s ease;
+  
 }
 
 .menu-btn__burger::before {
@@ -210,7 +213,7 @@ transform: scale(1.05);     }
 #slogan{
   text-align: center;
   border-bottom: solid 2px;
-  padding: 1em;
+  padding: 0.2em;
 }
 
 #sobre {
@@ -218,7 +221,7 @@ transform: scale(1.05);     }
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 2em;
+  padding: 0.8em;
 }
 
 #sobreText{
@@ -226,7 +229,7 @@ transform: scale(1.05);     }
   margin-inline: auto;
   max-width: 90%;
   width: 100%;
-  padding: 3em;
+  padding: 1em;
   background-color: #1c1c1c;
   border-radius: 0.5em;
   text-align: start;
@@ -239,16 +242,19 @@ transform: scale(1.05);     }
   transform: scale(1.05);
 }
 
-#baixarCV{
-  padding: 1em;
+.btn-download {
+  display: flex;
+  max-width: 200px;
+  padding: 0.5em;
   margin-top: 2em;
   border: solid 1px black;
-  border-radius: 1em;
+  border-radius: 0.5em;
   background-color: #c0c0c0;
   color: #000;
+  text-decoration: none;
 }
 
-#baixarCV:hover {
+.btn-download:hover {
   text-decoration: none;
   background-color: #ffffff;
   cursor: pointer;
@@ -263,7 +269,6 @@ transform: scale(1.05);     }
   justify-content: center;
   box-sizing: border-box;
   text-align: center;
-  max-width: 90%;
   margin: 0 auto;
   
   
@@ -277,11 +282,11 @@ transform: scale(1.05);     }
 #projetos img{
   max-width: 100%;
 }
+
 .box{
-  padding: 2em ;
+  padding: 1em ;
   background: linear-gradient(180deg, #1c1c1c, #000);
   border-radius: 0.5em;
-  
 }
 
 .carrossel {
@@ -377,16 +382,33 @@ transform: scale(1.05);     }
   background-color: #333;
 }
 
+.btn-projetos {
+  display: inline-block;
+  background-color: #c0c0c0;
+  color: #111;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin: 1.5em 0.8em;
+}
 
-
+.btn-projetos:hover {
+  transform: scale(1.1);
+  background-color: #ffffff;
+  cursor: pointer;
+}
 
 #contatos {
   display: flex;
   flex-direction: column;
   gap: 1em;
   background: linear-gradient(180deg, #1c1c1c, #000);
-  max-width: 70%;
+  margin: 0 auto;
   width: 90%;
+  max-width: 600px;
   padding: 1em;
   text-align: start;
   margin-inline: auto;
@@ -403,7 +425,7 @@ transform: scale(1.05);     }
     font-size: 1.2em;
   }
 
-#contatos input {
+#contatos input, textarea {
   border: none;
   border-radius: 0.5em;
   padding: 0.8em;
@@ -425,6 +447,7 @@ width: 100%; }
 }
 
 #enviar:hover {
+  transform: scale(1.05);
   background-color: #ffffff; }
 
 footer{

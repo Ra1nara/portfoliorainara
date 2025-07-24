@@ -11,7 +11,7 @@ particlesJS("particles-js", {
         "value": "#ffffff"
       },
       "shape": {
-        "type": "star"
+        "type": "circle"
       },
       "opacity": {
         "value": 0.5,
@@ -42,7 +42,7 @@ particlesJS("particles-js", {
         }
       }
     },
-    "retina_detect": true
+  "retina_detect": true
 });
   
 

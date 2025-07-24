@@ -62,10 +62,10 @@
       <p>Sou estudante de Desenvolvimento Web com mais de 2 anos de experiência prática. Como profissional autodidata, estou em
       constante busca por aprimoramento, aprendendo continuamente novas tecnologias.
       <br><br> Tenho experiência em projetos utilizando
-      HTML, CSS e JavaScript, com foco em oferecer experiências completas ao usuário — desenvolvendo interfaces atrativas,
+      HTML, CSS e JavaScript, com foco em oferecer experiências completas ao usuário desenvolvendo interfaces atrativas,
       intuitivas e responsivas para os mais diversos dispositivos.
       </p>
-      <button id="baixarCV">BAIXAR CV</button>
+      <a href="./assets/curriculo - rainaradev.pdf" download class="btn-download">📄 Baixar Currículo</a>
     </div>
     
   </section>
@@ -97,6 +97,8 @@
       <span><ion-icon name="logo-css3"></ion-icon> CSS3</span>
       <span><ion-icon name="logo-javascript"></ion-icon> JavaScript</span>
       </div>
+      <a class="btn-projetos" href="https://github.com/Ra1nara/landingpage-barber" target="_blank">GITHUB</a>
+      <a class="btn-projetos" href="https://ra1nara.github.io/landingpage-barber/" target="_blank">VER</a>
   </div>
   <div class="box">
     <div class="carrossel">
@@ -111,13 +113,17 @@
       <h3>Agrupador de Links</h3>
       <p>Página web que reúne links importantes em um
         único lugar, para facilitar acesso rápido e organizado. <br>
-        Destaques: Menu hamburger responsivo, uso de animações simples, layout mobile first.</p>
+        Destaques: Uso de animações simples, layout mobile first.</p>
     </div>
     <div class="tech-badges">
       <span><ion-icon name="logo-html5"></ion-icon> HTML5</span>
       <span><ion-icon name="logo-css3"></ion-icon> CSS3</span>
       <span><ion-icon name="logo-javascript"></ion-icon> JavaScript</span>
       </div>
+      <a class="btn-projetos" href="https://github.com/Ra1nara/agrupador-de-Links" target="_blank">GITHUB</a>
+      <a class="btn-projetos" href="https://ra1nara.github.io/agrupador-de-links/" target="_blank" >VER</a>
+       
+      
   </div>
     <div class="box">
     <div class="carrossel">
@@ -139,6 +145,8 @@
       <span><ion-icon name="logo-html5"></ion-icon> HTML5</span>
       <span><ion-icon name="logo-css3"></ion-icon> CSS3</span>
       </div>
+        <a class="btn-projetos" href="https://github.com/Ra1nara/Stranger-Things" target="_blank" >GITHUB</a>
+        <a class="btn-projetos" href="https://ra1nara.github.io/Stranger-Things/" target="_blank" >VER</a>
   </div>
   </div>
   </section>
@@ -146,10 +154,10 @@
 
   <section id="contatos" class="container">
     <h3>Entre em contato</h3> 
-    <form action="contatoForm" class="container">
+    <form action="https://formsubmit.co/rainara.santtoss@gmail.com" class="container" method="POST">
     
     <div>
-    <label for="nome" id="nome">Nome:</label> 
+    <label for="name" id="nome">Nome:</label> 
     <input type="text" id="nomeF" name="nomeF" placeholder="Digite seu nome" required>
     </div>
     <div>
@@ -161,9 +169,15 @@
     <input type="tel" id="whatsF" name="whatsF" placeholder="11999999999" required>
     </div>
     <div>
-    <label for="mensagem" id="mensagem">Mensagem:</label> 
-    <input type="text" id="mensagemF" name="mensagemF" placeholder="Ola, gostaria de fazer um orçamento..." required>
+    <label for="message" id="mensagem">Mensagem:</label> 
+    <textarea id="mensagemF" name="mensagemF" rows="5" placeholder="Ola, gostaria de fazer um orçamento..."  required></textarea>
     </div>
+
+    <input type="text" name="_honey" style="display:none">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    
+
     <button type="submit" id="enviar">Enviar</button>
     </form>
     
