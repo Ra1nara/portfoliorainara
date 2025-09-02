@@ -11,7 +11,7 @@ particlesJS("particles-js", {
         "value": "#ffffff"
       },
       "shape": {
-        "type": "circle"
+        "type": "triangle"
       },
       "opacity": {
         "value": 0.5,
@@ -66,7 +66,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         block: 'start'
       });
     }
-  });
+  }); 
 });
 
 // CARROSSEL - Suporta múltiplos carrosseis na página
