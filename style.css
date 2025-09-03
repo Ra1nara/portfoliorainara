@@ -195,21 +195,18 @@ transform: scale(1.05);     }
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0.8em;
 }
 
 
 #sobreText{
-  margin-top: 4em;
-  margin-inline: auto;
-  max-width: 90%;
-  width: 100%;
-  padding: 1em;
+  margin: 2em;
+  padding: 3em;
   background-color: #1c1c1c;
   border-radius: 0.5em;
   text-align: start;
   transition: transform 0.3s ease, color 0.3s ease;
-  }
+}
+
 #sobreText p {
   margin-top: 1em;
 }
@@ -237,33 +234,36 @@ transform: scale(1.05);     }
 
 
 #projetos {
+  margin: 3em auto;
+  padding: 1em;
+  max-width: 1200px;
+  text-align: center;
+}
+
+#projetosBox {
+  margin: 2em;
   display: flex;
-  flex-direction: column;
-  gap: 2em;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  text-align: center;
-  margin: 1em auto;
-  
-  
-}
-#projetosBox{
-  display: grid;
-  gap: 5em;
-  margin: 1em 0;
-  text-align: center;
+  flex-wrap: wrap;
+  /* quebra de linha automática */
+  gap: 2.5em;
+  /* espaçamento entre os cards */
+  justify-content: space-between;
+  /* centraliza os cards */
 }
 
-#projetos img{
-  max-width: 100%;
-}
-
-.box{
-  padding: 1em ;
+.box {
+  flex: 1 1 320px;
+  padding: 2em;
   background: linear-gradient(180deg, #1c1c1c, #000);
   border-radius: 0.5em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  /* para alinhar melhor os textos internos */
+}
+
+#projetos img {
+  max-width: 100%;
+  border-radius: 8px;
 }
 
 .carrossel {
@@ -382,12 +382,9 @@ transform: scale(1.05);     }
   flex-direction: column;
   gap: 1em;
   background: linear-gradient(180deg, #1c1c1c, #000);
-  margin: 0 auto;
-  width: 90%;
-  max-width: 600px;
+  margin: 2em;
   padding: 1em;
   text-align: start;
-  margin-inline: auto;
   border-radius: 0.5em;
 }
 #contatos h2{
@@ -487,20 +484,9 @@ footer{
   }
   
   #sobreText {
-    max-width: 70%;
     margin-bottom: 5em;
   }
-  #projetosBox{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 4em;
-  }
-
-  
-
-  #projetos{
-    margin: 5em auto;
-  }
+ 
 }
 
 @keyframes acenar {
