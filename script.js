@@ -91,4 +91,14 @@ document.querySelectorAll('.carrossel').forEach(carrossel => {
 
 
 
+ // ano automático
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // voltar ao topo suave
+  document.querySelector('.to-top').addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+
+
   
