@@ -90,7 +90,7 @@ header ul a:hover{
   left: 0;
   background: linear-gradient(180deg, #1c1c1c, #000);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
-  border-bottom: 1px solid #333;
+  
   transition: all 0.3s ease;
   width: 100%;
   padding: 1em 0;
@@ -192,7 +192,7 @@ transform: scale(1.05);     }
 
 #sobre {
   display: flex;
-  margin: 2em;
+  margin: 2em auto;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -209,7 +209,6 @@ transform: scale(1.05);     }
 }
 #sobreText h3{
   text-align: start;
-  margin-top: 1em;
 }
 
 #sobreText p {
@@ -258,6 +257,7 @@ transform: scale(1.05);     }
 
 
 .service-card p {
+  display: none;
   font-size: clamp(0.8rem, 1vw, 2rem);
   color: #444;
 }
@@ -292,7 +292,7 @@ transform: scale(1.05);     }
 }
 
 #projetosBox {
-  margin: 2em;
+  margin: 1em auto;
   display: flex;
   flex-wrap: wrap;
   /* quebra de linha automática */
@@ -304,7 +304,7 @@ transform: scale(1.05);     }
 
 .box {
   flex: 1 1 320px;
-  padding: 2em;
+  padding: 1em;
   background: linear-gradient(180deg, #1c1c1c, #000);
   border-radius: 0.5em;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -378,7 +378,7 @@ transform: scale(1.05);     }
 }
 
 .info h3{
-  margin: 2em 0;
+  margin: 1em 0;
   font-size: 1.5em;
 }
 
