@@ -478,7 +478,7 @@ transform: scale(1.05);     }
   flex-direction: column;
   gap: 1em;
   background: linear-gradient(180deg, #1c1c1c, #000);
-  margin: 2em;
+  margin: 2em 10em;
   padding: 1em;
   text-align: start;
   border-radius: 0.5em;
