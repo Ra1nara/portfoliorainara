@@ -1,31 +1,3 @@
-particlesJS("particles-js", {
-  "particles": {
-    "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
-    "color": { "value": "#ffffff" },
-    "shape": { "type": "star" },
-    "opacity": { "value": 0.7, "random": true },
-    "size": { "value": 3, "random": true },
-    "line_linked": { "enable": true },
-    "move": {
-      "enable": true,
-      "speed": 2,
-      "direction": "none",
-      "random": true,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false
-    }
-  },
-  "interactivity": {
-      "detect_on": "window",
-  "events": {
-    "onhover": { "enable": true, "mode": "repulse" },
-    "resize": true
-    },
-    "modes": { "repulse": { "distance": 120, "duration": 0.4 } }
-  },
-  "retina_detect": true
-});
 
 const menuBtn = document.getElementById('menu-btn');
 const nav = document.getElementById('nav');
@@ -46,6 +18,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
     }
   }); 
+});
+
+const container = document.querySelector(".planets-container");
+const next = document.querySelector(".next");
+const prev = document.querySelector(".prev");
+
+let index = 0;
+
+next.addEventListener("click", () => {
+  if (index < 5) index++;
+  container.style.transform = `translateX(-${index * 250}px)`;
+});
+
+prev.addEventListener("click", () => {
+  if (index > 0) index--;
+  container.style.transform = `translateX(-${index * 250}px)`;
 });
 
 function iniciarCarrossel(carrossel) {
