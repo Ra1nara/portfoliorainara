@@ -129,13 +129,16 @@ transform: scale(1.05);     }
 }
 #particles-js {
   position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   background-color: #000;
+  z-index: -1; 
+  pointer-events: none;
 }
+
+
 
 #home{
   position: relative;
